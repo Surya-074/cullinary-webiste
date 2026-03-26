@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Gustavo</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Gustavo<span class="highlight"> (Guss)</span></h1>
+                <p class="hero-subtitle">People call me Guss. I build next-gen UI/UX experiences.</p>
+                <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Start Here</button>
+            </div>
+            <div class="car-scene">
+                <div class="car">
+                    <div class="car-top"></div>
+                    <div class="car-body"></div>
+                    <div class="car-wheel wheel-front"></div>
+                    <div class="car-wheel wheel-back"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer and creative thinker with a love for building beautiful and functional digital experiences. With expertise across multiple technologies, I transform ideas into reality.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the community.</p>
+                </div>
+                <div class="about-3d">
+                    <div class="about-3d-inner">
+                        <h4 class="about-3d-title">3D Skill Visualization</h4>
+                        <div class="about-3d-items">
+                            <div class="about-3d-item">Frontend Architecture</div>
+                            <div class="about-3d-item">Backend Systems</div>
+                            <div class="about-3d-item">DevOps & CI/CD</div>
+                            <div class="about-3d-item">Data & AI Workflows</div>
+                            <div class="about-3d-item">UI/UX Strategy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <h3>30+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Featured Courses</h2>
+            <div class="courses-grid">
+                <!-- Frontend Development Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-1"></div>
+                    <div class="course-content">
+                        <h3>Frontend Development Mastery</h3>
+                        <p class="course-description">Master modern frontend technologies and build responsive, interactive web applications.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Beginner to Intermediate</span>
+                            <span class="course-duration">8 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>HTML5 & CSS3 Fundamentals</li>
+                                <li>JavaScript Essentials</li>
+                                <li>React.js Deep Dive</li>
+                                <li>State Management</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Backend Development Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-2"></div>
+                    <div class="course-content">
+                        <h3>Backend & API Development</h3>
+                        <p class="course-description">Build scalable server-side applications with databases, APIs, and authentication systems.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">10 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>Node.js & Express</li>
+                                <li>Database Design (SQL & NoSQL)</li>
+                                <li>RESTful API Development</li>
+                                <li>Authentication & Security</li>
+                                <li>Cloud Deployment</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Development Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-3"></div>
+                    <div class="course-content">
+                        <h3>Full-Stack Web Development</h3>
+                        <p class="course-description">Comprehensive course covering frontend, backend, and everything needed to build complete web applications.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate to Advanced</span>
+                            <span class="course-duration">16 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>Frontend Foundation</li>
+                                <li>Backend Development</li>
+                                <li>Database Integration</li>
+                                <li>Authentication Systems</li>
+                                <li>Deployment & DevOps</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Full-Stack</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-4"></div>
+                    <div class="course-content">
+                        <h3>Data Science & Analytics</h3>
+                        <p class="course-description">Learn data analysis, visualization, and machine learning fundamentals for informed decision-making.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">12 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>Python for Data Analysis</li>
+                                <li>Data Visualization</li>
+                                <li>Statistical Analysis</li>
+                                <li>Machine Learning Basics</li>
+                                <li>Big Data Tools</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-5"></div>
+                    <div class="course-content">
+                        <h3>DevOps & Cloud Technologies</h3>
+                        <p class="course-description">Master deployment, containerization, and cloud platforms for modern application infrastructure.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Advanced</span>
+                            <span class="course-duration">10 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>Docker & Containerization</li>
+                                <li>Kubernetes Orchestration</li>
+                                <li>CI/CD Pipelines</li>
+                                <li>Cloud Platforms (AWS, GCP)</li>
+                                <li>Infrastructure as Code</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Course -->
+                <div class="course-card">
+                    <div class="course-header course-header-6"></div>
+                    <div class="course-content">
+                        <h3>UI/UX Design Fundamentals</h3>
+                        <p class="course-description">Create beautiful and user-friendly interfaces with design principles and modern tools like Figma.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Beginner to Intermediate</span>
+                            <span class="course-duration">8 weeks</span>
+                        </div>
+                        <div class="course-modules">
+                            <h4>Modules:</h4>
+                            <ul>
+                                <li>Design Principles</li>
+                                <li>User Research & Personas</li>
+                                <li>Wireframing & Prototyping</li>
+                                <li>Figma Mastery</li>
+                                <li>Usability Testing</li>
+                            </ul>
+                        </div>
+                        <div class="course-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Vue.js</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">CSS/SCSS</div>
+                        <div class="skill-item">Tailwind</div>
+                        <div class="skill-item">JavaScript</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Express</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">REST APIs</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">UI/UX Design</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's create something amazing together</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>gustavo@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gustavo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
